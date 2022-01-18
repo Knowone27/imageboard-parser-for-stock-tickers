@@ -29,7 +29,7 @@ namespace fren
             string[] subString;
             
             WebClient client = new WebClient();
-            string json = client.DownloadString("https://a.4cdn.org/biz/thread/37631449.json");
+            string json = client.DownloadString("");
             dynamic jsonobj = JsonConvert.DeserializeObject<dynamic>(json);
 
             string jsonText = jsonobj.ToString();
